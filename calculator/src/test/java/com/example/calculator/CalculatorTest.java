@@ -36,6 +36,12 @@ public class CalculatorTest {
         int result = calculator.sum(3, 2);
         assertEquals(5, result);
     }
+    
+    @Test
+    public void testMultiplication(){
+        int result = calculator.multiplication(4, 4);
+        assertEquals(16, result);
+    }
 
     @Test
     public void testSumHundreds() {
@@ -43,6 +49,12 @@ public class CalculatorTest {
         assertEquals(700, result);
     }
 
+    @Test
+    public void testSubtraction() {
+        int result = calculator.subtraction(100500, 500);
+        assertEquals(100000, result);
+    }
+    
     @Test
     public void testDivison() {
         try {
@@ -65,9 +77,5 @@ public class CalculatorTest {
         assertFalse(result);
     }
 
-    @Test(expected = AssertionError.class)
-    public void testSubstraction() {
-        int result = 10 - 3;
-        assertTrue(result == 9);
-    }
+
 }
