@@ -33,7 +33,8 @@ public class Calculator implements ICalculator {
         return result;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         int a = 0;
         String ne_ws;
         System.out.println("Hello Calculator...");
