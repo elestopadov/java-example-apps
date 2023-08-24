@@ -1,11 +1,22 @@
 package com.example.calculator;
 
+/** 
+ * This is simple class 'Calculator' with method <b>main</b>.
+ * @author Evg
+ * @version 0.1
+*/
+
 public class Calculator implements ICalculator {
+    /**
+     * Description of method sum(). 
+    */
     @Override
     public int sum(int a, int b) {
         return a + b;
     }
-
+    /**
+     * Description of method subtraction(). 
+    */
     @Override
     public int subtraction(int a, int b) {
         return a - b;
@@ -33,6 +44,11 @@ public class Calculator implements ICalculator {
         return result;
     }
 
+    
+  /**
+  * This method: main
+  * @param args are arguments
+  */
     public static void main(String[] args) 
     {
         int a = 0;
